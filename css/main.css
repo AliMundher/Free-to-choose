@@ -5,7 +5,7 @@ body {
 
 :root {
     --whiteColor: #fff;
-    --backgColor: #292929;
+    --blackColor: #292929;
     --grayColor: #f5f5f5;
 }
 
@@ -15,7 +15,7 @@ body {
     text-align: center;
     position: fixed;
     bottom: 0;
-    width: 100%
+    width: 100%;
 }
 
 /* Start Header */
@@ -24,7 +24,7 @@ header {
     background-image: url('../images/banner-top.jpg');
     background-size: cover;
     background-position: center;
-    height: 800px;
+    height: 850px;
     position: relative;
 }
 
@@ -40,25 +40,203 @@ header {
 }
 
 .main_title {
-    font-size: 60px;
+    font-size: 4.1em;
     font-weight: bold;
     color: var(--whiteColor);
 }
 
-.header_text .check_lin {
+.header_text .check_link {
     color: var(--whiteColor);
     text-decoration: none;
-    margin-top: 5%;
+    margin-top: 10%;
+    display: block;
+    font-weight: bold;
+    text-transform: capitalize;
+}
+
+.header_text .check_link .line {
+    width: 30px;
+    height: 1.5px;
+    background-color: var(--whiteColor);
+    position: relative;
+    top: 13px;
+    left: -33px;
     display: block;
 }
 
-.header_text .check_lin .line {
+.small_lines {
+    position: absolute;
+    top: 38%;
+    left: 4%;
+}
+
+@media(max-width:767px) {
+    .small_lines {
+        display: none
+    }
+}
+
+.small_lines>span {
+    width: 17px;
+    height: 1.8px;
+    background-color: #777;
+    margin-bottom: 15px;
+    display: block;
+}
+
+.small_lines span:nth-child(2) {
     width: 30px;
-    height: 1px;
-    background-color: var(--whiteColor)
+    background-color: var(--whiteColor);
 }
 
 /* End Header */
+
+/* Start Boxes */
+
+.boxes {
+    margin-top: -5%;
+}
+
+.boxes .box_all {
+    background-color: var(--whiteColor);
+    height: 280px;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    box-shadow: 0 0 6px #eee;
+}
+
+@media (max-width:767px) {
+    .boxes {
+        margin-top: 5%;
+    }
+    .boxes .box_all {
+        box-shadow: 0 0 6px transparent;
+    }
+}
+
+.boxes .box_all svg {
+    position: relative;
+    top: 30px
+}
+
+@media (min-width:576px) and (max-width:767px) {
+    .box_all {
+        display: flex;
+        height: 166px!important;
+        margin-bottom: 12%;
+    }
+    .boxes .box_all svg {
+        flex-basis: 35%;
+    }
+    .boxes .box_all .text_box {
+        flex-basis: 65%;
+        position: relative;
+        top: 33px;
+    }
+    .boxes .box_all .sub_title {
+        position: relative;
+        top: -36%;
+        margin: 0;
+        margin-top: 0px;
+        display: inline-block;
+        left: 36%;
+        width: 60%
+    }
+}
+
+.boxes .box_all .sub_title {
+    color: var(--blackColor);
+    font-size: 21px;
+    font-weight: bolder;
+    margin-top: 42px;
+}
+
+.boxes .box_all .text_box {
+    font-size: 0.9em;
+    margin-top: 10px;
+}
+
+/* Start Boxes */
+
+/* Start Discovery (Our Story) */
+
+.discover_box {
+    box-shadow: 0 0 0px 17px #eee;
+    padding: 48px;
+    position: relative;
+    top: 68px;
+    left: -150px;
+    background-color: var(--whiteColor);
+}
+
+@media(max-width:767px) {
+    .discover_box {
+        left: 0
+    }
+}
+
+@media (min-width:576px) and (max-width:767px) {
+    .discover_box {
+        box-shadow: 0 0 0px 4px #eee;
+        padding: 48px;
+        position: relative;
+        top: -98px;
+        left: 10px;
+        background-color: var(--whiteColor);
+        width: 96%;
+    }
+}
+
+.discovery_prag {
+    font-size: 0.9em;
+}
+
+.discovery_prag_two {
+    margin-bottom: 37px;
+}
+
+.fount_text {
+    font-size: 0.9em;
+    margin-bottom: 0
+}
+
+/* End Discovery (Our Story) */
+
+/* Start Discovery (Our Restaurants) */
+
+.hachures {
+    background-color: #eeeeee8c;
+}
+
+.our_restaurant {
+    background-image: url("../images/burger party.png");
+    background-size: cover;
+    background-position: center;
+    min-height: 364px;
+    background-color: whitesmoke;
+    /* margin-top: 12%; */
+    position: relative;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #f5f5f5de;
+}
+
+.our_restaurant_text {
+    z-index: 100;
+    position: relative;
+}
+
+.our_restaurant .title_franchise {}
+
+.our_restaurant .title_restaurants {}
+
+/* End Discovery (Our Restaurants) */
 
 /* Bootstrap Style */
 
@@ -68,8 +246,10 @@ header {
     top: 12px
 }
 
-.navbar-nav .nav-item .nav-link {
+.navbar-nav .nav-item .nav-link.active, .navbar-nav .nav-item .nav-link {
     color: var(--whiteColor);
+    text-transform: capitalize;
+    padding-right: 1em;
 }
 
 .navbar-nav .nav-item .nav-link:hover {
@@ -84,4 +264,17 @@ header {
 
 .navbar-light .navbar-brand:hover {
     color: var(--whiteColor);
+}
+
+.menu-item-126 {
+    background-color: var(--whiteColor);
+    width: 100px;
+    text-align: center;
+    color: var(--blackColor);
+}
+
+.menu-item-126:last-child a {
+    color: var(--blackColor);
+    text-transform: uppercase;
+    display: inline-block
 }

@@ -12,7 +12,6 @@
     <?php wp_head() ?>
 </head>
 <body>
-
 <header>
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <div class="container">
@@ -27,12 +26,6 @@
             </div>
         </div>
     </nav>
-    <div class="container">
-        <div class="header_text">
-            <h3 class="sub_title text-capitalize">for happy day</h3>
-            <h2 class="main_title text-capitalize">enjoy <br> happy meat</h2>
-            <a href="" class="check_link"><span class="line"></span>check our menu</a>
-
-        </div>
-    </div>
 </header>
+
+
