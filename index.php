@@ -109,6 +109,22 @@
         <h2 class="title_1 text-capitalize">discover our franchise</h2>
         <h2 class="title_2  text-uppercase">our restaurants</h2>
     </div>
+    <div class="row my-5">
+    <div class="col-12 col-md-5 ">
+            <div class="discover_box">                
+                <h3 class="display-5 text-capitalize">discover</h3>
+                <h2 class="text-uppercase font-weight-bold ">our story</h2>   
+                <p class="font-weight-bold text-capitalize">Lorem ipsum dolor sit amet consectetur</p>   
+                <p class="discovery_prag">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil similique vero consectetur
+                    nulla doloribus ducimus ipsam praesentium </p>    
+                <button>more info</button>
+            </div>
+        </div>
+        <div class="col-12 col-md-6">
+            <img src="<?php echo get_template_directory_uri(); ?>/images/the-chef.jpg" class="img-fluid" alt="Logo">
+        </div>
+        
+    </div>
 </div>
 <!-- End Discover(Our Restaurants) -->
 
