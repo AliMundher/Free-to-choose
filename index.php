@@ -109,21 +109,61 @@
         <h2 class="title_1 text-capitalize">discover our franchise</h2>
         <h2 class="title_2  text-uppercase">our restaurants</h2>
     </div>
-    <div class="row my-5">
-    <div class="col-12 col-md-5 ">
-            <div class="discover_box">                
-                <h3 class="display-5 text-capitalize">discover</h3>
-                <h2 class="text-uppercase font-weight-bold ">our story</h2>   
-                <p class="font-weight-bold text-capitalize">Lorem ipsum dolor sit amet consectetur</p>   
-                <p class="discovery_prag">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil similique vero consectetur
-                    nulla doloribus ducimus ipsam praesentium </p>    
-                <button>more info</button>
+
+    <div class="container">
+        <div class="row my-5   my_col">
+            <div class="col-12 col-md-5 ">
+                <div class=" discover_restaurant_box text-center">                
+                    <h3 class="display-5 text-capitalize box_title_1">our origunal restaurant</h3>
+                    <h2 class="text-capitalize font-weight-bold box_title_2">the chef's cafeteria</h2>     
+                    <p class="discovery_prag">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil similique vero consectetur
+                    nulla doloribus ducimus ipsam praesentiu nulla doloribus ducimus ipsam praesentium </p>    
+                    <button class="more">more info</button>
+                </div>
+            </div>
+            <div class="col-12 col-md-7 text-center">
+                <img src="<?php echo get_template_directory_uri(); ?>/images/resto1.jpg" class="img-fluid" alt="Logo">
             </div>
         </div>
-        <div class="col-12 col-md-6">
-            <img src="<?php echo get_template_directory_uri(); ?>/images/the-chef.jpg" class="img-fluid" alt="Logo">
+    </div>
+<!-- --------2--------- -->
+    <div class="container mon">
+        <div class="row my-5">
+        <div class="col-12 col-md-7 text-center">
+                <img src="<?php echo get_template_directory_uri(); ?>/images/resto3.jpg" class="img-fluid" alt="Logo">
+            </div>
+            <div class="col-12 col-md-5 ">
+                <div class=" discover_restaurant_box my_reset_1 text-center">                
+                    <h3 class="display-5 text-capitalize box_title_1">our first restaurant in brussels</h3>
+                    <h2 class="text-capitalize font-weight-bold box_title_2">the becenteral resto</h2>     
+                    <p class="discovery_prag">somewhere over the rainbow</p>    
+                    <p class="discovery_prag">why up height</p>    
+                    <p class="discovery_prag">and dreams that you dream of</p>    
+                    <p class="discovery_prag">once in a lullaby</p>    
+                    <button class="more">more info</button>
+                </div>
+            </div>
+            
         </div>
-        
+    </div>
+<!-- ---------3-------- -->
+<div class="container mon">
+        <div class="row my-5   my_col">
+            <div class="col-12 col-md-5 ">
+                <div class=" discover_restaurant_box reset_2 text-center">                
+                    <h3 class="display-5 text-capitalize box_title_1">outssipulou the place to be</h3>
+                    <h2 class="text-capitalize font-weight-bold box_title_2">the honkytonk</h2>     
+                    <p class="discovery_prag">ensemble des morceaux</p>    
+                    <p class="discovery_prag">sens est source de distractions</p>    
+                    <p class="discovery_prag">tout cas comparable</p>    
+                    <p class="discovery_prag">une recherche pour 'Lorem Ipsum' vous </p>    
+                    <button class="more">more info</button>
+                </div>
+            </div>
+            <div class="col-12 col-md-7 text-center">
+                <img src="<?php echo get_template_directory_uri(); ?>/images/resto2.jpg" class="img-fluid" alt="Logo">
+            </div>
+        </div>
     </div>
 </div>
 <!-- End Discover(Our Restaurants) -->

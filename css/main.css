@@ -9,15 +9,6 @@ body {
     --grayColor: #f5f5f5;
 }
 
-.footer {
-    background-color: rgb(121, 71, 71);
-    padding: 30px;
-    text-align: center;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-}
-
 /* Start Header */
 
 header {
@@ -161,7 +152,7 @@ header {
 /* Start Discovery (Our Story) */
 
 .discover_box {
-    box-shadow: 0 0 0px 17px #eee;
+    box-shadow: 0 0 0px 14px #eee;
     padding: 48px;
     position: relative;
     top: 68px;
@@ -216,7 +207,8 @@ header {
     background-color: whitesmoke;
     /* margin-top: 12%; */
     position: relative;
-    padding: 50px
+    padding: 50px;
+    width: 100%;
 }
 
 .overlay {
@@ -240,6 +232,81 @@ header {
 .our_restaurant_text .title_2 {
     font-weight: bold;
     font-size: 1.6em;
+}
+
+.discover_restaurant_box {
+    left: 75px;
+    top: 40px;
+    z-index: 40;
+    box-shadow: 0 0 0 14px #eee;
+    background-color: var(--whiteColor);
+    padding: 25px;
+    position: relative;
+    top: 66px;
+    left: 140px;
+}
+
+@media(max-width:767px) {
+    .discover_restaurant_box {
+        left: 0;
+        z-index: 0;
+        flex-direction: column-reverse;
+    }
+}
+
+.our_restaurant img {
+    width: 462px;
+    height: 400px;
+}
+
+@media (min-width:576px) and (max-width:767px) {}
+
+.box_title_1 {
+    font-size: 1.3em;
+}
+
+.box_title_2 {
+    font-size: 1.5em;
+    font-weight: bolder;
+    letter-spacing: 1.6px;
+    margin-bottom: 5%;
+}
+
+.more {
+    width: 105px;
+    padding: 7px;
+    background-color: var(--blackColor);
+    color: var(--whiteColor);
+    border: none;
+    text-transform: capitalize;
+    font-weight: bold;
+    font-size: 0.9em;
+    margin-top: 2%;
+}
+
+.my_reset_1 {
+    left: -138px;
+    top: 35px!important;
+}
+
+.reset_2 {
+    top: 37px!important;
+}
+
+@media (max-width:767px) {
+    .my_reset_1 {
+        left: 0px;
+        top: -10px
+    }
+    .mon {
+        margin-top: 3%
+    }
+}
+
+@media (max-width:991px) {
+    .mon {
+        margin-top: 15%
+    }
 }
 
 /* End Discovery (Our Restaurants) */
@@ -284,3 +351,17 @@ header {
     text-transform: uppercase;
     display: inline-block
 }
+
+/* Start Footer */
+
+.footer {
+    background-color: rgb(121, 71, 71);
+    padding: 30px;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    z-index: -20;
+}
+
+/* End Footer */
