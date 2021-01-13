@@ -76,7 +76,7 @@
 
 <!-- End Boxes -->
 
-<!-- Start Discover(Our Story) -->
+<!-- Start Our Story -->
 <div class="container">
     <div class="row my-5">
         <div class="col-12 col-md-6">
@@ -97,9 +97,9 @@
         </div>
     </div>
 </div>
-<!-- End Discover(Our Story) -->
+<!-- End Our Story -->
 
-<!-- Start Discover(Our Restaurants) -->
+<!-- Start Our Restaurants -->
 <div class="hachures">
     <img src="<?php echo get_template_directory_uri(); ?>/images/hachures-blanches.png" class="img-fluid" alt="photo">
 </div>
@@ -109,7 +109,7 @@
         <h2 class="title_1 text-capitalize">discover our franchise</h2>
         <h2 class="title_2  text-uppercase">our restaurants</h2>
     </div>
-
+<!-- --------Row 1--------- -->
     <div class="container">
         <div class="row my-5   my_col">
             <div class="col-12 col-md-5 ">
@@ -126,7 +126,7 @@
             </div>
         </div>
     </div>
-<!-- --------2--------- -->
+<!-- --------Row 2--------- -->
     <div class="container mon">
         <div class="row my-5">
         <div class="col-12 col-md-7 text-center">
@@ -146,7 +146,7 @@
             
         </div>
     </div>
-<!-- ---------3-------- -->
+<!-- ---------Row 3-------- -->
 <div class="container mon">
         <div class="row my-5   my_col">
             <div class="col-12 col-md-5 ">
@@ -166,7 +166,140 @@
         </div>
     </div>
 </div>
-<!-- End Discover(Our Restaurants) -->
+<div class="rotate_noise">
+    <img src="<?php echo get_template_directory_uri(); ?>/images/hachures-blanches.png" class="img-fluid" alt="photo">
+</div>
+<!-- End Our Restaurants -->
+<!-- Start our menu -->
+<div class="our_menu">
+    <div class="container">
+        <div class="row">
+            <div class="col-12 col-md-5 text-center ">
+                <div class="images_col row">
+                    <img src="<?php echo get_template_directory_uri(); ?>/images/p1.jpg" 
+                    class="img-fluid col-12 col-sm-6 col-md-6 mb-3 pl-1" alt="image">
+                    <img src="<?php echo get_template_directory_uri(); ?>/images/p2.jpg" 
+                    class="img-fluid col-12 col-sm-6 col-md-6 mb-3 pl-1" alt="image">
+                    <img src="<?php echo get_template_directory_uri(); ?>/images/p3.jpg" 
+                    class="img-fluid col-12 col-sm-6 col-md-6 pl-1 mb-3 mb-md-0" alt="image">
+                    <img src="<?php echo get_template_directory_uri(); ?>/images/p4.jpg" 
+                    class="img-fluid col-12 col-sm-6 col-md-6 pl-1" alt="image">
+                </div>
+            </div>
+            <div class="col-12 col-md-7 text-center">
+                <div class="right_text">
+                    <h2 class="display-5 text-uppercase title_1">let's discover food</h2>
+                        <h2 class="text-uppercase title_2">discover our menu</h2>
+                        <p class="prag">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Reprehenderit molestiae veritatis modi fugiat quisquam nemo perspiciatis
+                            doloribus quisquam nemo perspiciatis quisquam nemo perspiciatis
+                        </p>
+                        <button class="text-capitalize btn_menu">view the full menu</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- End Our menu -->
+
+<!-- Start Testimonial -->
+<div class="testimonial">
+    <div class="noise_line">
+        <img src="<?php echo get_template_directory_uri(); ?>/images/hachures-noires.png" class="img-fluid" alt="photo">
+    </div>
+    <div class="row">
+        <div class="col-12 col-md-6 text-center p-0">
+            <div class="left_test">
+                <i class="fa fa-quote-right" aria-hidden="true"></i>
+                <p class="left_test_pra">Aspernatur magni Lorem ipsum dolor,Aspernatur magni  consectetur Aspernatur magni voluptatum unde.</p>
+                <span class="line_small"></span><span class="name text-capitalize display-5">monther saeed</span>
+                <div class="boluts_slide">
+                    <span></span>
+                    <span class="active"></span>
+                    <span></span>
+                </div>
+            </div>
+        </div>
+        <div class="col-12 col-md-6 p-0">
+            <div class="right_test">
+                <img src="<?php echo get_template_directory_uri(); ?>/images/resto2.jpg" class="img-fluid" alt="photo">
+            </div>
+        </div>
+    </div>
+    <div class="noise_line_2">
+        <img src="<?php echo get_template_directory_uri(); ?>/images/hachures-noires.png" class="img-fluid" alt="photo">
+    </div>
+</div>
+<!-- End Testimonial -->
+<!-- Start Recipes Blog -->
+<div class="recipes_blog">
+    <div class="blog_text text-center">
+        <h2 class="title_1 text-capitalize display-5">latest update</h2>
+        <h2 class="title_2 text-uppercase font-font-weight-bold">rcipes blog</h2>
+    </div>
+    <div class="container">
+        <div class="row mt-5">
+            <div class="col-12 col-md-3 mb-4 col-sm-6 mb-md-0">
+                <img src="<?php echo get_template_directory_uri(); ?>/images/p1.jpg" class="img-fluid" alt="photo">
+                <i class="fa fa-clock-o clock my-3" aria-hidden="true"></i> <span class="date my-3">12 mars 2021</span>
+                <h2 class="title_1">fluffy japanese pancakes</h2>
+                <p class="disc">Lorem ipsum dolor, consectetur Commodi deleniti nisi sequi ea magnam dolorum.</p>
+                <span class="line_dash"></span>
+                <span class="read_more float-right text-capitalize">read more</span>
+            </div>
+            <div class="col-12 col-md-3 mb-4 col-sm-6 mb-md-0">
+                <img src="<?php echo get_template_directory_uri(); ?>/images/p2.jpg" class="img-fluid" alt="photo">
+                <i class="fa fa-clock-o clock my-3" aria-hidden="true"></i> <span class="date my-3">oct,4 2021</span>
+                <h2 class="title_1">sunday brunch: egslut's</h2>
+                <p class="disc">Lorem ipsum dolor, consectetur Commodi deleniti nisi sequi ea magnam dolorum.</p>
+                <span class="line_dash"></span>
+                <span class="read_more float-right text-capitalize">read more</span>
+            </div>
+            <div class="col-12 col-md-3 mb-4 col-sm-6 mb-md-0">
+                <img src="<?php echo get_template_directory_uri(); ?>/images/p3.jpg" class="img-fluid" alt="photo">
+                <i class="fa fa-clock-o clock my-3" aria-hidden="true"></i> <span class="date my-3">12 mars 2021</span>
+                <h2 class="title_1">copycat panda express</h2>
+                <p class="disc">Lorem ipsum dolor, consectetur Commodi deleniti nisi sequi ea magnam dolorum.</p>
+                <span class="line_dash"></span>
+                <span class="read_more float-right text-capitalize">read more</span>
+            </div>
+            <div class="col-12 col-md-3 mb-4 col-sm-6 mb-md-0">
+                <img src="<?php echo get_template_directory_uri(); ?>/images/p4.jpg" class="img-fluid" alt="photo">
+                <i class="fa fa-clock-o clock my-3" aria-hidden="true"></i> <span class="date my-3">12 mars 2021</span>
+                <h2 class="title_1">delfni's secret pork sugo</h2>
+                <p class="disc">Lorem ipsum dolor, consectetur Commodi deleniti nisi sequi ea magnam dolorum.</p>
+                <span class="line_dash"></span>
+                <span class="read_more float-right text-capitalize">read more</span>
+            </div>
+        </div>
+    </div>
+    
+</div>
+<!-- End Recipes Blog -->
+
+ 
+<!-- Start NewsLetters -->
+<div class="container">
+    <div class="newsletter">
+        <div class=" line_noise ">
+            <img src="<?php echo get_template_directory_uri(); ?>/images/hachures-noires.png" class="img-fluid" alt="photo">
+        </div>
+        <div class="row">
+            <div class="col-12 col-md-5">
+                <h1 class="text-uppercase h3 join_text">join our <br> newsletter</h1>
+            </div>
+            <div class="col-12 col-md-7 ">
+                <div class="input_search text-right">
+                    <input type="text" placeholder="Enter your Email" class="p-2">
+                    <button class="text-uppercase p-2 btn_sub">subscribe</button>
+                </div>
+            </div>
+        </div>
+       
+    </div>
+</div>
+<!-- End NewsLetters -->
+
 
 
 <?php get_footer(); ?>

@@ -1,6 +1,6 @@
 body {
-    height: 3000px;
     font-family: 'Poppins', sans-serif;
+    overflow-x: hidden;
 }
 
 :root {
@@ -309,9 +309,305 @@ header {
     }
 }
 
+.rotate_noise {
+    background: #f4f4f4;
+    transform: rotate(180deg)
+}
+
 /* End Discovery (Our Restaurants) */
 
-/* Bootstrap Style */
+/* Start Our Menu */
+
+.our_menu {
+    margin-top: 4%;
+}
+
+.images_col img {
+    width: 150px;
+    /* height: 190px; */
+    display: block
+}
+
+.right_text {
+    position: relative;
+    top: 5%
+}
+
+.our_menu .title_1 {
+    font-size: 1.3em;
+}
+
+.our_menu .title_2 {
+    font-weight: bold;
+    font-size: 1.6em;
+    margin-bottom: 5%;
+}
+
+.prag {
+    font-size: 0.9em;
+}
+
+.btn_menu {
+    width: 180px;
+    padding: 8px;
+    background-color: var(--blackColor);
+    color: var(--whiteColor);
+    border: none;
+    margin-top: 5%;
+}
+
+/* End Our Menu */
+
+/*----- Start Testimonial -----*/
+
+.noise_line {
+    position: absolute;
+    top: -9px;
+}
+
+.noise_line_2 {
+    transform: rotate(180deg);
+    position: absolute;
+    bottom: -9px;
+    z-index: -1;
+}
+
+.testimonial {
+    margin-top: 7%;
+    position: relative;
+}
+
+.left_test {
+    height: 400px;
+    background-color: var(--blackColor);
+    color: var(--whiteColor);
+    padding: 18px;
+    font-weight: bold;
+    line-height: 1.9;
+    padding-top: 14%;
+}
+
+.left_test .fa-quote-right {
+    font-size: 2em;
+}
+
+.left_test_pra {
+    width: 391px;
+    margin: 3% auto
+}
+
+.right_test img {
+    height: 400px;
+    width: 100%
+}
+
+.boluts_slide {
+    margin-top: 3%
+}
+
+.boluts_slide>span {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: #444;
+    display: inline-block;
+    text-align: center;
+    margin-right: 10px;
+}
+
+.boluts_slide>span.active {
+    background-color: var(--whiteColor);
+}
+
+.name {
+    color: #777
+}
+
+/*----- End Testimonial -----*/
+
+/* ----- Start recipes_blog -----*/
+
+.recipes_blog {
+    margin-top: 7%;
+}
+
+.blog_text .title_1 {
+    font-size: 1.8em;
+}
+
+.blog_text .title_2 {
+    font-size: 2em;
+    font-weight: bold;
+}
+
+.recipes_blog .clock {
+    color: #777;
+    font-size: 0.8em;
+}
+
+.recipes_blog .date {
+    font-size: 0.8em;
+    color: #777;
+}
+
+.recipes_blog .title_1 {
+    font-size: 1.1em;
+    font-weight: bold;
+    margin-bottom: 17px;
+    text-transform: capitalize;
+}
+
+.recipes_blog .disc {
+    font-size: 0.9em;
+    color: #777
+}
+
+.recipes_blog .line_dash {
+    width: 140px;
+    height: 1px;
+    background-color: #777;
+    display: inline-block
+}
+
+.recipes_blog .read_more {
+    font-size: 0.7em;
+    font-weight: bold;
+}
+
+/* ----- End recipes_blog -----*/
+
+/* ----- Start Newsletter -----*/
+
+.line_noise {
+    position: absolute;
+    top: -9px;
+    left: 0;
+}
+
+.newsletter {
+    position: relative;
+    padding: 50px;
+    color: var(--whiteColor);
+    background-color: var(--blackColor);
+    margin-top: 7%;
+    z-index: 300;
+}
+
+.join_text {
+    font-weight: bolder;
+}
+
+.input_search {
+    position: relative;
+    top: 14%
+}
+
+.input_search input[type=text] {
+    border: none;
+    border-radius: 3px;
+    width: 290px
+}
+
+.input_search .btn_sub {
+    width: 110px;
+    border: none;
+    border-radius: 3px;
+    margin-left: 6px;
+    margin-top: 10px;
+    font-size: 0.9em;
+}
+
+@media(max-width:767px) {
+    .input_search {
+        text-align: center!important;
+    }
+    .input_search input[type=text] {
+        width: 100%
+    }
+    .line_noise_last {
+        position: absolute;
+        bottom: -15px;
+        left: 0;
+        transform: rotate(540deg);
+    }
+}
+
+/* ----- End Newsletter -----*/
+
+/* Start Footer */
+
+footer {
+    background-color: var(--blackColor);
+    padding: 20px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    color: var(--whiteColor)
+}
+
+.title_fot {
+    font-size: 1.4em;
+    font-weight: bold;
+    margin-bottom: 7%;
+}
+
+.fot_pra {
+    font-size: 0.8em;
+}
+
+.social_icons i {
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    line-height: 30px;
+    border-radius: 50%;
+    border: 1px solid var(--whiteColor);
+    cursor: pointer
+}
+
+.open_fot {
+    font-size: 0.9em;
+    font-weight: bold;
+    margin-bottom: 16px;
+}
+
+.open_one .fa-clock-o {
+    font-size: 0.8em;
+}
+
+.open_one {
+    position: relative;
+    margin-bottom: 10px;
+    margin-top: 7%
+}
+
+.open_one .line_sp {
+    position: absolute;
+    left: 85px;
+    top: 12px;
+    display: block;
+    width: 48px;
+    height: 2px;
+    background-color: var(--whiteColor);
+}
+
+.open_one .closed {
+    margin-left: 27%;
+    font-size: 0.9em;
+}
+
+.open_one .day {
+    font-size: 0.9em;
+}
+
+.map {
+    line-height: 1.7;
+    font-size: 0.9em;
+}
+
+/* End Footer */
+
+/*----- Bootstrap Style -----*/
 
 .bg-light {
     background-color: transparent!important;
@@ -351,17 +647,3 @@ header {
     text-transform: uppercase;
     display: inline-block
 }
-
-/* Start Footer */
-
-.footer {
-    background-color: rgb(121, 71, 71);
-    padding: 30px;
-    text-align: center;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-    z-index: -20;
-}
-
-/* End Footer */
