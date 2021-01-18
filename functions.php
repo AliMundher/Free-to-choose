@@ -2,6 +2,9 @@
 
 include_once("bs4navwalker.php");
 
+// Add Feature Image Support
+add_theme_support("post-thumbnails");
+
 /*
 |-------------------------------------------------
 | Add Custom Styles
@@ -70,11 +73,46 @@ function display_menu(){
 
 /*
 |-------------------------------------------------
+| Return Length of the Posts (Excerpt)
+| By Group
+| get_length_of_posts()
+|-------------------------------------------------
+*/
+
+function get_length_of_posts($length){
+    return 40;
+}
+
+/*
+|-------------------------------------------------
+| Return three points nested prakets
+| By Group
+| dots()
+|-------------------------------------------------
+*/
+function dots($more){
+    return ' ...';
+}
+
+
+/*
+|-------------------------------------------------
 | All Action
-| By Mundher
+| By Group
 | add_action()
 |-------------------------------------------------
 */
 add_action("wp_enqueue_scripts",'add_my_style'); // Action of Style Css
 add_action("wp_enqueue_scripts",'add_my_script'); // Action of Script Js
 add_action("init",'add_custom_menu'); // Action of Menu
+add_action("init",'get_length_of_posts'); // Action of Excerpt
+
+/*
+|-------------------------------------------------
+| All filters
+| By Group
+| add_filter()
+|-------------------------------------------------
+*/
+add_filter('excerpt_length','get_length_of_posts');
+add_filter('excerpt_more','dots');

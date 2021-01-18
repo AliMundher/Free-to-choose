@@ -12,7 +12,7 @@
     <?php wp_head() ?>
 </head>
 <body>
-<header>
+<div class="header">
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <div class="container">
             <a href="<?php bloginfo('url') ?>" class="navbar-brand">
@@ -26,7 +26,10 @@
             </div>
         </div>
     </nav>
-</header>
+</div>
+<div class="bla ">
+    <img src="<?php echo get_template_directory_uri(); ?>/images/hachures-blanches.png" class="img-fluid" alt="Logo">
+</div>
 
 
 

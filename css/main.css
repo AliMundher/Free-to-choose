@@ -11,10 +11,24 @@ body {
 
 /* Start Header */
 
-header {
-    background-image: url('../images/banner-top.jpg');
+header, .header .header3 {
     background-size: cover;
     background-position: center;
+    position: relative;
+}
+
+header {
+    background-image: url('../images/banner-top.jpg');
+    height: 850px;
+}
+
+.header {
+    background-color: var(--blackColor);
+    height: 650px;
+}
+
+.header3 {
+    background-image: url('../images/bg-menu.jpg');
     height: 850px;
     position: relative;
 }
@@ -83,6 +97,10 @@ header {
 /* End Header */
 
 /* Start Boxes */
+
+.top {
+    margin-top: -13%
+}
 
 .boxes {
     margin-top: -5%;
@@ -220,6 +238,10 @@ header {
     background-color: #f5f5f5ed;
 }
 
+.overlay_2 {
+    background-color: #00000069;
+}
+
 .our_restaurant_text {
     z-index: 100;
     position: relative;
@@ -252,6 +274,11 @@ header {
         z-index: 0;
         flex-direction: column-reverse;
     }
+    .respon_img img {
+        width: 100%!important;
+        position: relative;
+        top: 77px;
+    }
 }
 
 .our_restaurant img {
@@ -272,9 +299,9 @@ header {
     margin-bottom: 5%;
 }
 
-.more {
+.discover_restaurant_box a {
     width: 105px;
-    padding: 7px;
+    padding: 11px;
     background-color: var(--blackColor);
     color: var(--whiteColor);
     border: none;
@@ -282,6 +309,9 @@ header {
     font-weight: bold;
     font-size: 0.9em;
     margin-top: 2%;
+    width: 120px;
+    display: block;
+    margin: auto;
 }
 
 .my_reset_1 {
@@ -290,7 +320,7 @@ header {
 }
 
 .reset_2 {
-    top: 37px!important;
+    top: 56px!important;
 }
 
 @media (max-width:767px) {
@@ -314,9 +344,21 @@ header {
     transform: rotate(180deg)
 }
 
+.page_restaurant a {
+    font-size: 1.2em;
+    text-transform: capitalize;
+    text-decoration: none;
+    margin-bottom: 17px;
+    display: block
+}
+
+.page_restaurant p {
+    font-size: 0.9em;
+}
+
 /* End Discovery (Our Restaurants) */
 
-/* Start Our Menu */
+/*----- Start Our Menu and Page of Menu-----*/
 
 .our_menu {
     margin-top: 4%;
@@ -356,7 +398,48 @@ header {
     margin-top: 5%;
 }
 
-/* End Our Menu */
+.text_menu .title_welcome {
+    font-size: 1.6em!important;
+}
+
+.menu {
+    margin-top: 5%;
+    width: 400px;
+    margin: auto;
+}
+
+@media(max-width:767px) {
+    .menu {
+        width: 100%!important;
+    }
+}
+
+.menu p {
+    font-size: 0.9em;
+}
+
+.menu p:nth-of-type(even) {
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.start {
+    font-size: 1.5em;
+    font-weight: bold;
+    position: relative;
+}
+
+.start:after {
+    content: '';
+    position: absolute;
+    top: 30px;
+    left: 47%;
+    width: 6%;
+    height: 2px;
+    background-color: var(--blackColor);
+}
+
+/*----- End Our Menu -----*/
 
 /*----- Start Testimonial -----*/
 
@@ -490,7 +573,8 @@ header {
     color: var(--whiteColor);
     background-color: var(--blackColor);
     margin-top: 7%;
-    z-index: 300;
+    /* z-index: -300; */
+    box-shadow: 0 0 6px #444
 }
 
 .join_text {
@@ -534,15 +618,90 @@ header {
 
 /* ----- End Newsletter -----*/
 
+/* ----- Start Chef  -----*/
+
+.text {
+    margin: 5% 0;
+}
+
+.welcome {
+    font-size: 1.7em;
+}
+
+.present {
+    font-size: 1.8em;
+}
+
+.bla {
+    position: relative;
+    top: -11px;
+    transform: rotate(180deg);
+}
+
+.mop p img {
+    width: 500px;
+    height: 270px
+}
+
+.mop h2 {
+    display: none
+}
+
+/* ----- Start Chef  -----*/
+
+/* ----- Start Single page Style  -----*/
+
+/* .single_content {
+    position: relative;
+    top: -730px;
+    color: var(--whiteColor)
+} */
+
+.single_content .return_link {
+    color: var(--blackColor);
+    font-size: 0.9em;
+}
+
+.single_content .date {
+    font-size: 0.9em;
+}
+
+.cut_style img {
+    width: 12px!important;
+    height: 12px!important;
+}
+
+.title_single {
+    font-weight: bold;
+    text-transform: capitalize;
+    margin-bottom: 3%;
+    font-size: 1.5em;
+}
+
+.all_content h3 {
+    font-size: 1em!important;
+}
+
+.single_content .all_content p img {
+    width: 900px;
+    height: 350px;
+    position: relative;
+    top: 30px;
+    margin-bottom: 5%;
+}
+
+/* ----- End Single page Style  -----*/
+
 /* Start Footer */
 
 footer {
     background-color: var(--blackColor);
     padding: 20px;
-    position: fixed;
+    /* position: fixed;
     bottom: 0;
-    width: 100%;
-    color: var(--whiteColor)
+    width: 100%; */
+    color: var(--whiteColor);
+    z-index: -50;
 }
 
 .title_fot {
