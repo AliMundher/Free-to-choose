@@ -11,7 +11,7 @@ body {
 
 /* Start Header */
 
-header, .header .header3 {
+header, .header .header3, .header4 {
     background-size: cover;
     background-position: center;
     position: relative;
@@ -19,7 +19,7 @@ header, .header .header3 {
 
 header {
     background-image: url('../images/banner-top.jpg');
-    height: 850px;
+    height: 700px;
 }
 
 .header {
@@ -29,13 +29,19 @@ header {
 
 .header3 {
     background-image: url('../images/bg-menu.jpg');
-    height: 850px;
+    height: 700px;
+    position: relative;
+}
+
+.header4 {
+    background-image: url('../images/resto1.jpg');
+    height: 700px;
     position: relative;
 }
 
 .header_text {
     position: absolute;
-    top: 17%;
+    top: 20%;
 }
 
 .sub_title {
@@ -239,7 +245,7 @@ header {
 }
 
 .overlay_2 {
-    background-color: #00000069;
+    background-color: #0000007a;
 }
 
 .our_restaurant_text {
@@ -423,13 +429,17 @@ header {
     text-transform: uppercase;
 }
 
-.start {
+.menu p:nth-of-type(odd) {
+    color: #777
+}
+
+.start, .menu p:nth-child(15), .menu p:nth-child(29) {
     font-size: 1.5em;
     font-weight: bold;
     position: relative;
 }
 
-.start:after {
+.start:after, .menu p:nth-child(15):after, .menu p:nth-child(29):after {
     content: '';
     position: absolute;
     top: 30px;
@@ -437,6 +447,46 @@ header {
     width: 6%;
     height: 2px;
     background-color: var(--blackColor);
+}
+
+.menu p:nth-child(15), .menu p:nth-child(29) {
+    text-transform: capitalize;
+    margin-bottom: 11%;
+    text-align: center;
+}
+
+.menu p:nth-child(15) {
+    width: 241%!important;
+    left: -70%;
+    color: var(--blackColor)
+}
+
+.menu p:nth-child(29) {
+    color: var(--blackColor);
+    width: 436% !important;
+    left: -169%;
+}
+
+.page_menu_bg {
+    padding-top: 4px;
+    padding-bottom: 10px;
+    background-color: #eee;
+    margin-bottom: 4%;
+}
+
+.menu_nois {
+    transform: rotate(0deg);
+    position: relative;
+    top: 4px!important;
+    background-color: #eee;
+    transform: rotate(0deg)!important;
+}
+
+.nois_bto {
+    transform: rotate(180deg) !important;
+    position: relative;
+    bottom: 68px !important;
+    background-color: #eee;
 }
 
 /*----- End Our Menu -----*/
@@ -510,6 +560,17 @@ header {
 
 /* ----- Start recipes_blog -----*/
 
+.mr_top {
+    margin-top: 12%!important;
+    margin-bottom: 12%!important;
+}
+
+@media(max-width:991px) {
+    .my_custom_row img {
+        height: 100%;
+    }
+}
+
 .recipes_blog {
     margin-top: 7%;
 }
@@ -541,8 +602,8 @@ header {
 }
 
 .recipes_blog .disc {
+    color: #777;
     font-size: 0.9em;
-    color: #777
 }
 
 .recipes_blog .line_dash {
@@ -555,6 +616,55 @@ header {
 .recipes_blog .read_more {
     font-size: 0.7em;
     font-weight: bold;
+}
+
+.col_left_text {
+    border: 2px solid #eee;
+    padding: 20px;
+    background-color: rgba(238, 238, 238, 0.2)
+}
+
+.col_left_text .date {
+    color: #777
+}
+
+.col_left_text .date span, .col_left_text i {
+    font-size: 0.8em;
+    display: inline-block
+}
+
+.one img, .food img {
+    width: 12px!important;
+    height: 12px!important;
+}
+
+.col_left_text .local_food {
+    color: var(--blackColor);
+    font-weight: bold;
+}
+
+.col_left_text .salade_title {
+    font-weight: bold;
+    font-size: 1.4em;
+}
+
+.mooon {
+    padding: 20px;
+}
+
+.col_left_text .disc {
+    font-size: 0.9em;
+}
+
+.col_left_text .btn_read_more {
+    width: 131px;
+    padding: 9px;
+    border: none;
+    font-size: 0.7em;
+    font-weight: bold;
+    background-color: var(--blackColor);
+    color: var(--whiteColor);
+    margin-top: 3%;
 }
 
 /* ----- End recipes_blog -----*/
@@ -651,14 +761,14 @@ header {
 
 /* ----- Start Single page Style  -----*/
 
-/* .single_content {
+.single_content {
     position: relative;
-    top: -730px;
+    top: -500px;
     color: var(--whiteColor)
-} */
+}
 
 .single_content .return_link {
-    color: var(--blackColor);
+    color: var(--whiteColor);
     font-size: 0.9em;
 }
 
@@ -683,11 +793,93 @@ header {
 }
 
 .single_content .all_content p img {
-    width: 900px;
+    width: 100%;
     height: 350px;
     position: relative;
     top: 30px;
     margin-bottom: 5%;
+}
+
+.m_top {
+    position: relative;
+    top: -479px;
+}
+
+.ins p {
+    color: #777;
+    font-size: 0.9em;
+}
+
+.list li, .title_of_list {
+    font-size: 1em;
+    color: #777;
+    line-height: 1.4
+}
+
+.m_top .title_list {
+    font-size: 1.3em;
+}
+
+.ins .small_circle {
+    position: relative
+}
+
+.ins .small_circle:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -33px;
+    background-color: var(--blackColor);
+    width: 23px;
+    height: 23px;
+    line-height: 23px;
+    border-radius: 50%;
+}
+
+.ins .small_circle:after {
+    content: '1';
+    position: absolute;
+    top: 0;
+    left: -24px;
+    z-index: 200;
+    color: white;
+}
+
+.ins .twoo:after {
+    content: '2';
+    position: absolute;
+    top: 0;
+    left: -26px;
+    z-index: 200;
+    color: white;
+}
+
+.ins .threee:after {
+    content: '3';
+    position: absolute;
+    top: 0;
+    left: -26px;
+    z-index: 200;
+    color: white;
+}
+
+.ins .fourr:after {
+    content: '4';
+    position: absolute;
+    top: 0;
+    left: -27px;
+    z-index: 200;
+    color: white;
+}
+
+.single_img {
+    width: 100%;
+    height: 350px;
+}
+
+.recipes_top {
+    position: relative;
+    top: -435px;
 }
 
 /* ----- End Single page Style  -----*/
@@ -722,6 +914,11 @@ footer {
     border-radius: 50%;
     border: 1px solid var(--whiteColor);
     cursor: pointer
+}
+
+.social_media i {
+    border: 1px solid var(--blackColor)!important;
+    margin-bottom: 5px;
 }
 
 .open_fot {
@@ -762,6 +959,11 @@ footer {
 .map {
     line-height: 1.7;
     font-size: 0.9em;
+}
+
+.email {
+    font-size: 0.9em;
+    display: inline-block
 }
 
 /* End Footer */

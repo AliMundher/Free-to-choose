@@ -1,8 +1,27 @@
 
-
+<!-- Start NewsLetters -->
+<div class="container">
+    <div class="newsletter">
+        <div class=" line_noise ">
+            <img src="<?php echo get_template_directory_uri(); ?>/images/hachures-noires.png" class="img-fluid" alt="photo">
+        </div>
+        <div class="row">
+            <div class="col-12 col-md-5">
+                <h1 class="text-uppercase h3 join_text">join our <br> newsletter</h1>
+            </div>
+            <div class="col-12 col-md-7 ">
+                <div class="input_search text-right">
+                    <input type="text" placeholder="Enter your Email" class="p-2">
+                    <button class="text-uppercase p-2 btn_sub">subscribe</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- End NewsLetters -->
         <footer>
             <div class="container">
-                <div class="row">
+                <div class="row pt-5">
                     <div class="col-12 col-md-3">
                         <h1 class="text-capitalize title_fot">dev restaurants</h1>
                         <p class="fot_pra">Lorem, ipsum consectetur adipisicing voluptatem dolores
@@ -50,7 +69,7 @@
                             <span class="text-capitalize map">rue de sallon,36 <br> 4120 liège <br> belgiume</span>
                         </div>
                         <i class="fa fa-envelope mr-2" aria-hidden="true"></i>
-                        <span>devservice@gmail.com</span>
+                        <span class="email">devservice@gmail.com</span>
                     </div>
                     <div class="col-12 col-md-3">
                         <h1 class="text-capitalize open_fot ">instagram</h1>
@@ -81,5 +100,9 @@
             </div>
         </footer>
         <?php wp_footer() ?>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+        <script>
+            new WOW().init();
+        </script>
     </body>
 </html>
