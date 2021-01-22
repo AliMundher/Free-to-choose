@@ -10,12 +10,11 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
-
     <?php wp_head() ?>
 </head>
 <body>
-<header>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+<div class="header">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light ">
         <div class="container">
             <a href="<?php bloginfo('url') ?>" class="navbar-brand wow animate__slideInDown" data-wow-duration="2s">
                 <span><?php bloginfo('name') ?></span>
@@ -23,12 +22,15 @@
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#menu">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse wow animate__slideInDown" data-wow-duration="2s" id="menu">
+            <div class="collapse navbar-collapse wow animate__slideInDown" data-wow-duration="2s" id="menu" id="menu">
                 <?php display_menu() ?>
             </div>
         </div>
     </nav>
-</header>
+</div>
+<div class="bla ">
+    <img src="<?php echo get_template_directory_uri(); ?>/images/hachures-blanches.png" class="img-fluid" alt="Logo">
+</div>
 
 
 

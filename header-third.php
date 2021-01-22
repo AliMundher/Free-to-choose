@@ -14,13 +14,14 @@
     <?php wp_head() ?>
 </head>
 <body>
-<header>
+<div class="header3">
+    <div class="overlay overlay_2 "></div>
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <div class="container">
             <a href="<?php bloginfo('url') ?>" class="navbar-brand wow animate__slideInDown" data-wow-duration="2s">
                 <span><?php bloginfo('name') ?></span>
             </a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#menu">
+            <button class="navbar-toggler " type="button" data-toggle="collapse" data-target="#menu">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse wow animate__slideInDown" data-wow-duration="2s" id="menu">
@@ -28,7 +29,10 @@
             </div>
         </div>
     </nav>
-</header>
+</div>
+<div class="bla ">
+    <img src="<?php echo get_template_directory_uri(); ?>/images/hachures-blanches.png" class="img-fluid" alt="Logo">
+</div>
 
 
 
