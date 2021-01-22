@@ -884,6 +884,82 @@ header {
 
 /* ----- End Single page Style  -----*/
 
+/* ----- Start Order page Style  -----*/
+
+.title_h1 {
+    font-size: 1.5em;
+}
+
+.title_h2 {
+    font-size: 1.7em;
+}
+
+@media(max-width:1200px) {
+    .reset_img_order img {
+        height: 100%!important
+    }
+}
+
+.right_text_order {
+    padding: 34px;
+    border: 1px solid #777;
+    height: 100%
+}
+
+.right_text_order .disc_p {
+    line-height: 1.7;
+    font-size: 0.9em;
+    color: #777
+}
+
+.find_us_text {
+    margin-top: 6%;
+}
+
+form {
+    width: 100%;
+    height: 100%;
+}
+
+.reserver {
+    margin: 5% 0 10% 0;
+}
+
+.top_m {
+    margin-top: 6%;
+}
+
+.reserver img {
+    width: 100%;
+    height: 100%;
+}
+
+@media (max-width: 992px) {
+    .reserver img {
+        height: 100%;
+        width: 100%
+    }
+}
+
+.reserver textarea {
+    width: 100%;
+    padding: 5px;
+}
+
+.btn_reserve {
+    border: none;
+    background-color: var(--blackColor);
+    color: var(--whiteColor);
+    padding: 7px 10px;
+}
+
+.reserver .discover_box {
+    position: relative;
+    top: 27px!important;
+}
+
+/* ----- End Order page Style  -----*/
+
 /* Start Footer */
 
 footer {
@@ -980,6 +1056,11 @@ footer {
     color: var(--whiteColor);
     text-transform: capitalize;
     padding-right: 1em;
+}
+
+#menu-navigation #menu-item-126 a {
+    color: var(--blackColor)!important;
+    font-weight: bold;
 }
 
 .navbar-nav .nav-item .nav-link:hover {

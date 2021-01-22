@@ -4,7 +4,7 @@
     <img src="<?php echo get_template_directory_uri(); ?>/images/hachures-blanches.png" class="img-fluid" alt="Logo">
 </div>
 <div class="container">
-    <div class="header_text">
+    <div class="header_text wow animate__bounceIn" data-wow-duration="2s" data-wow-delay="1s">
         <h3 class="sub_title text-capitalize">for happy day</h3>
         <h2 class="main_title text-capitalize">enjoy <br> happy meat</h2>
         <a href="" class="check_link"><span class="line"></span>check our menu</a>
@@ -244,7 +244,7 @@
     </div>
     <div class="container">
         <div class="row mt-5">
-            <div class="col-12 col-md-3 mb-4 col-sm-6 mb-md-0">
+            <div class="col-12 col-md-3 mb-4 col-sm-6 mb-md-0 wow animate__slideInLeft" data-wow-duration="2s">
                 <img src="<?php echo get_template_directory_uri(); ?>/images/p1.jpg" class="img-fluid" alt="photo">
                 <i class="fa fa-clock-o clock my-3" aria-hidden="true"></i> <span class="date my-3">12 mars 2021</span>
                 <h2 class="title_1">fluffy japanese pancakes</h2>
@@ -252,7 +252,7 @@
                 <span class="line_dash"></span>
                 <span class="read_more float-right text-capitalize">read more</span>
             </div>
-            <div class="col-12 col-md-3 mb-4 col-sm-6 mb-md-0">
+            <div class="col-12 col-md-3 mb-4 col-sm-6 mb-md-0 wow animate__slideInUp" data-wow-duration="2s">
                 <img src="<?php echo get_template_directory_uri(); ?>/images/p2.jpg" class="img-fluid" alt="photo">
                 <i class="fa fa-clock-o clock my-3" aria-hidden="true"></i> <span class="date my-3">oct,4 2021</span>
                 <h2 class="title_1">sunday brunch: egslut's</h2>
@@ -260,7 +260,7 @@
                 <span class="line_dash"></span>
                 <span class="read_more float-right text-capitalize">read more</span>
             </div>
-            <div class="col-12 col-md-3 mb-4 col-sm-6 mb-md-0">
+            <div class="col-12 col-md-3 mb-4 col-sm-6 mb-md-0 wow animate__slideInUp" data-wow-duration="2s">
                 <img src="<?php echo get_template_directory_uri(); ?>/images/p3.jpg" class="img-fluid" alt="photo">
                 <i class="fa fa-clock-o clock my-3" aria-hidden="true"></i> <span class="date my-3">12 mars 2021</span>
                 <h2 class="title_1">copycat panda express</h2>
@@ -268,7 +268,7 @@
                 <span class="line_dash"></span>
                 <span class="read_more float-right text-capitalize">read more</span>
             </div>
-            <div class="col-12 col-md-3 mb-4 col-sm-6 mb-md-0">
+            <div class="col-12 col-md-3 mb-4 col-sm-6 mb-md-0 wow animate__slideInRight" data-wow-duration="2s">
                 <img src="<?php echo get_template_directory_uri(); ?>/images/p4.jpg" class="img-fluid" alt="photo">
                 <i class="fa fa-clock-o clock my-3" aria-hidden="true"></i> <span class="date my-3">12 mars 2021</span>
                 <h2 class="title_1">delfni's secret pork sugo</h2>
